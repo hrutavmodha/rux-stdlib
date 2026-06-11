@@ -15,6 +15,6 @@ module Std {
             String::From(file) + ":" + Format("{}", line) + ":" + Format("{}", column) +
             "\n    in function " + String::From(function) + "\n";
         Print(output);
-        Exit(1);
+        Exit(1u32);
     }
 }

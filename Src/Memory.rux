@@ -304,22 +304,22 @@ module Std::Memory {
 
     @[Target("BSD")]
     func Zero(ptr: *opaque, size: uint) {
-        Set(ptr, size, 0);
+        Set(ptr, size, 0i32);
     }
 
     @[Target("Illumos")]
     func Zero(ptr: *opaque, size: uint) {
-        Set(ptr, size, 0);
+        Set(ptr, size, 0i32);
     }
 
     @[Target("Linux")]
     func Zero(ptr: *opaque, size: uint) {
-        Set(ptr, size, 0);
+        Set(ptr, size, 0i32);
     }
 
     @[Target("MacOS")]
     func Zero(ptr: *opaque, size: uint) {
-        Set(ptr, size, 0);
+        Set(ptr, size, 0i32);
     }
 
     @[Target("Windows")]
